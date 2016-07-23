@@ -1,15 +1,15 @@
 'use strict'
 
-const webpack = require('webpack')
+// const webpack = require('webpack')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: {
-    main: './index.js',
+    main: './index.js'
   },
   output: {
     path: './public/',
-    filename: 'app.js',
+    filename: 'app.js'
   },
   module: {
     preLoaders: [
@@ -33,7 +33,7 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('css!sass')
       }
-    ],
+    ]
   },
   plugins: [
     new ExtractTextPlugin('style.css', {
