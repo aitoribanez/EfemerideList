@@ -1,8 +1,8 @@
 {
   "name": "EfemerideList",
-  "version": "0.5.4",
+  "version": "0.5.6",
   "description": "React component to make a list with header and footer using an array of objects",
-  "main": "index.js",
+  "main": "public/app.js",
   "scripts": {
     "build": "webpack",
     "lint": "standard '*/.*.js' '*.js'",
