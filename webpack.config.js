@@ -9,7 +9,8 @@ module.exports = {
   },
   output: {
     path: './public/',
-    filename: 'app.js'
+    filename: 'app.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     preLoaders: [
