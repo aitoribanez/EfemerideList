@@ -1,9 +1,25 @@
-== Use ==
+## Install
 
-(is recommended to install the component inside 'components' folder ... so ...
-cd components )
+- npm install EfemerideList
 
-- git clone https://github.com/aitoribanez/efemerideList.git
+## Use
+
+```javascript
+import EfemerideList from 'EfemerideList'
+
+ReactDOM.render(<EfemerideList />, document.getElementById('container'))
+```
+
+== Build == (for remembering! :-)
+
+- Copy the module outside *node_modules* folder to avoid webpack errors. *components*
+folder for example.
+
+- Make modifications
+
+- Change package version number
+
+- npm publish
 
 - cd EfemerideList
 
