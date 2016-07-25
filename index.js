@@ -3,7 +3,7 @@ import React from 'react'
 import EfemerideListHeader from './EfemerideListHeader'
 import EfemerideListFooter from './EfemerideListFooter'
 import EfemerideListItems from './EfemerideListItems'
-import './styles.scss'
+import './EfemerideList/styles.scss'
 
 export default class EfemerideList extends React.Component {
   render () {
