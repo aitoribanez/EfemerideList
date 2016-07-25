@@ -61,15 +61,13 @@ module.exports =
 
 	var _EfemerideListHeader2 = _interopRequireDefault(_EfemerideListHeader);
 
-	var _EfemerideListFooter = __webpack_require__(36);
+	var _EfemerideListFooter = __webpack_require__(34);
 
 	var _EfemerideListFooter2 = _interopRequireDefault(_EfemerideListFooter);
 
-	var _EfemerideListItems = __webpack_require__(38);
+	var _EfemerideListItems = __webpack_require__(35);
 
 	var _EfemerideListItems2 = _interopRequireDefault(_EfemerideListItems);
-
-	__webpack_require__(41);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -78,6 +76,8 @@ module.exports =
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// import './EfemerideList/styles.scss'
 
 	var EfemerideList = function (_React$Component) {
 	  _inherits(EfemerideList, _React$Component);
@@ -91,6 +91,11 @@ module.exports =
 	  _createClass(EfemerideList, [{
 	    key: 'render',
 	    value: function render() {
+	      var styles = {
+	        list: {
+	          fontSize: 14
+	        }
+	      };
 	      var efemerides = [{
 	        id: 1,
 	        date: 98,
@@ -103,7 +108,7 @@ module.exports =
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container', id: 'list' },
+	        { className: 'container', style: styles.list },
 	        _react2.default.createElement(_EfemerideListHeader2.default, { title: 'efemerides', date: '12/06/2016' }),
 	        _react2.default.createElement(_EfemerideListItems2.default, { efemerides: efemerides }),
 	        _react2.default.createElement(_EfemerideListFooter2.default, { author: 'Aitor Ibañez', url: 'https://aitoribanez.com' })
@@ -4049,8 +4054,6 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(34);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -4058,6 +4061,8 @@ module.exports =
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// import './styles.scss'
 
 	var EfemerideListHeader = function (_React$Component) {
 	  _inherits(EfemerideListHeader, _React$Component);
@@ -4071,12 +4076,27 @@ module.exports =
 	  _createClass(EfemerideListHeader, [{
 	    key: 'render',
 	    value: function render() {
+	      var styles = {
+	        listHeader: {
+	          backgroundColor: 'red',
+	          marginTop: 10,
+	          display: 'flex',
+	          color: 'white',
+	          justifyContent: 'center',
+	          textTransform: 'uppercase'
+	        },
+	        listHeaderSpan: {
+	          margin: '10px 10px 10px 3em',
+	          fontWeight: 400
+	        }
+	      };
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col s9', id: 'listHeader' },
+	          { className: 'col s9', style: styles.listHeader },
 	          _react2.default.createElement(
 	            'h5',
 	            null,
@@ -4084,7 +4104,7 @@ module.exports =
 	          ),
 	          _react2.default.createElement(
 	            'span',
-	            null,
+	            { style: styles.listHeaderSpan },
 	            this.props.date
 	          )
 	        )
@@ -4105,13 +4125,6 @@ module.exports =
 
 /***/ },
 /* 34 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 35 */,
-/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4126,8 +4139,6 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(37);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -4135,6 +4146,8 @@ module.exports =
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// import './styles.scss'
 
 	var EfemerideListFooter = function (_React$Component) {
 	  _inherits(EfemerideListFooter, _React$Component);
@@ -4148,12 +4161,19 @@ module.exports =
 	  _createClass(EfemerideListFooter, [{
 	    key: 'render',
 	    value: function render() {
+	      var styles = {
+	        listFooter: {
+	          backgroundColor: 'grey',
+	          padding: 5
+	        }
+	      };
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col s9', id: 'listFooter' },
+	          { className: 'col s9', style: styles.listFooter },
 	          'CC 2016 ',
 	          _react2.default.createElement(
 	            'a',
@@ -4177,13 +4197,7 @@ module.exports =
 	};
 
 /***/ },
-/* 37 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 38 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4198,7 +4212,7 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _EfemerideListItem = __webpack_require__(39);
+	var _EfemerideListItem = __webpack_require__(36);
 
 	var _EfemerideListItem2 = _interopRequireDefault(_EfemerideListItem);
 
@@ -4245,7 +4259,7 @@ module.exports =
 	};
 
 /***/ },
-/* 39 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4260,8 +4274,6 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(40);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -4269,6 +4281,8 @@ module.exports =
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// import './styles.scss'
 
 	var EfemerideListItem = function (_React$Component) {
 	  _inherits(EfemerideListItem, _React$Component);
@@ -4284,6 +4298,16 @@ module.exports =
 	    value: function render() {
 	      var efemeride = this.props.efemeride;
 
+	      var styles = {
+	        listItem: {
+	          display: 'flex'
+	        },
+	        listItemP: {
+	          display: 'flex',
+	          marginLeft: 10
+	        }
+	      };
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'row' },
@@ -4292,7 +4316,7 @@ module.exports =
 	          { className: 'col s8' },
 	          _react2.default.createElement(
 	            'li',
-	            { className: 'listItem' },
+	            { style: styles.listItem },
 	            _react2.default.createElement(
 	              'h4',
 	              null,
@@ -4300,7 +4324,7 @@ module.exports =
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              null,
+	              { style: styles.listItemP },
 	              efemeride.data
 	            )
 	          )
@@ -4318,18 +4342,6 @@ module.exports =
 	EfemerideListItem.propTypes = {
 	  efemeride: _react2.default.PropTypes.object.isRequired
 	};
-
-/***/ },
-/* 40 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 41 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

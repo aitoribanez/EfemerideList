@@ -3,10 +3,15 @@ import React from 'react'
 import EfemerideListHeader from './EfemerideListHeader'
 import EfemerideListFooter from './EfemerideListFooter'
 import EfemerideListItems from './EfemerideListItems'
-import './EfemerideList/styles.scss'
+// import './EfemerideList/styles.scss'
 
 export default class EfemerideList extends React.Component {
   render () {
+    let styles = {
+      list: {
+        fontSize: 14
+      }
+    }
     let efemerides = [
       {
         id: 1,
@@ -20,7 +25,7 @@ export default class EfemerideList extends React.Component {
       }
     ]
 
-    return <div className='container' id='list'>
+    return <div className='container' style={styles.list} >
       <EfemerideListHeader title='efemerides' date='12/06/2016' />
 
       <EfemerideListItems efemerides={efemerides} />
