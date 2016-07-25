@@ -61,15 +61,15 @@ module.exports =
 
 	var _EfemerideListHeader2 = _interopRequireDefault(_EfemerideListHeader);
 
-	var _EfemerideListFooter = __webpack_require__(35);
+	var _EfemerideListFooter = __webpack_require__(36);
 
 	var _EfemerideListFooter2 = _interopRequireDefault(_EfemerideListFooter);
 
-	var _EfemerideListItems = __webpack_require__(37);
+	var _EfemerideListItems = __webpack_require__(38);
 
 	var _EfemerideListItems2 = _interopRequireDefault(_EfemerideListItems);
 
-	__webpack_require__(40);
+	__webpack_require__(41);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4110,7 +4110,8 @@ module.exports =
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 35 */
+/* 35 */,
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4125,7 +4126,7 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(36);
+	__webpack_require__(37);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4176,13 +4177,13 @@ module.exports =
 	};
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4197,7 +4198,7 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _EfemerideListItem = __webpack_require__(38);
+	var _EfemerideListItem = __webpack_require__(39);
 
 	var _EfemerideListItem2 = _interopRequireDefault(_EfemerideListItem);
 
@@ -4244,7 +4245,7 @@ module.exports =
 	};
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4259,7 +4260,7 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(39);
+	__webpack_require__(40);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4319,13 +4320,13 @@ module.exports =
 	};
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

@@ -3,6 +3,8 @@
 // const webpack = require('webpack')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+let extractSCSS = new ExtractTextPlugin('style.scss')
+
 module.exports = {
   entry: {
     main: './index.js'
@@ -32,14 +34,13 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('css!sass')
+        // loader: ExtractTextPlugin.extract('css!sass')
+        loader: extractSCSS.extract(['css','sass'])
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css', {
-      allChunks: true
-    })
+    extractSCSS
   ],
   standard: {
     // config options to be passed through to standard e.g.
